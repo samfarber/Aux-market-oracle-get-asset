@@ -1,0 +1,12 @@
+// buy
+buy_market_order(amount) // Buy immediately for amount in the asset currency
+buy_limit_order(min_price, amount) // Buy when price reaches or drops below min_price for amount in the asset currency
+on_stop_buy(min_price, amount) // order is inactive until price reaches or goes above min_price
+
+// sell
+sell_market_order(amount) // Sell immediately for amount in the asset currency
+sell_limit_order(min_price, amount) // Buy when price reaches or goes above min_price for amount in the asset currency
+on_stop_sell(min_price, amount) // order is inactive until price reaches or drops below max_price
+
+get_orders(id)
+get_current_price(asset)
